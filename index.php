@@ -59,6 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php if($delete){echo '<meta http-equiv="refresh" content="0">';}  ?>
+    <?php if($insert){echo '<meta http-equiv="refresh" content="0">';}  ?>
+    <?php if($update){echo '<meta http-equiv="refresh" content="0">';}  ?>
     <title>My Notes - PHP CRUD App</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
